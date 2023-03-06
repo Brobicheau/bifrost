@@ -1,0 +1,28 @@
+import { Button } from "@bifrost/core/src";
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+
+<Meta title="Components/Button" component={Button} />
+
+# Button
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc euismod.
+
+## Props
+
+<ArgsTable of={Button} />
+
+## Examples
+
+<Canvas>
+    <Story name="Default">
+        <Button variant="solid" color="primary">
+            Hello
+        </Button>
+        <Button variant="outlined" color="primary">
+            Hello
+        </Button>
+        <Button variant="ghost" color="primary">
+            Hello
+        </Button>
+    </Story>
+</Canvas>
