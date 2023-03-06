@@ -1,5 +1,5 @@
+export type Colors = typeof colors;
 export type ColorKey = keyof typeof colors;
-
 export type ColorScaleKey = keyof typeof colors[ColorKey];
 
 const colors = {
