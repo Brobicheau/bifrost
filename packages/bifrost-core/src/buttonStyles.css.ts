@@ -1,14 +1,17 @@
+import { globalVariantsRecipeObject } from "@bifrost/system/src";
 import { recipe, RecipeVariants } from "@vanilla-extract/recipes";
-import { globalVariantsRecipe } from "./styles/globalVariants.css";
+
+const base = {};
 
 export type Variants = RecipeVariants<typeof variants>;
+
 export const variants = recipe({
     variants: {
         variant: {
-            ...globalVariantsRecipe.variant,
+            ...globalVariantsRecipeObject.variant,
         },
         color: {
-            ...globalVariantsRecipe.color,
+            ...globalVariantsRecipeObject.color,
         },
     },
 });

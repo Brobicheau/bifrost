@@ -11,6 +11,8 @@ const palettes = Object.entries(variantPalettes).map(([key, value]) => ({
     ...value,
 })) as Palette[];
 
+export type GlobalVariant = ReturnType<typeof createVariantTheme>;
+
 const globalVariants = palettes.reduce(
     (accum, palette) => {
         const variantTheme = createVariantTheme(
@@ -29,7 +31,10 @@ const globalVariants = palettes.reduce(
         };
     },
 
-    { variants: {}, colors: {} }
+    {
+        variants: {} as GlobalVariant["variants"],
+        colors: {} as GlobalVariant["colors"],
+    }
 );
 
 export default globalVariants;

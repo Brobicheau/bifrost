@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@bifrost/tsconfig": "workspace:*",
-    "@bifrost/theme": "workspace:*",
+    "@bifrost/system": "workspace:*",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "eslint": "^8.15.0",

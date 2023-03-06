@@ -1,3 +1,6 @@
-import { globalVariantsRecipeObject } from "@bifrost/theme/src";
+import { globalVariantsRecipeObject } from "@bifrost/system/src";
+import { recipe } from "@vanilla-extract/recipes";
 
-export const globalVariantsRecipe = globalVariantsRecipeObject;
+export const globalVariantsRecipe = recipe({
+    variants: globalVariantsRecipeObject,
+});

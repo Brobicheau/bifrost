@@ -14,7 +14,6 @@ export const globalVariantsRecipeObject = {
     },
 };
 
-export const getGlobalVariantRecipe = () =>
-    recipe({
-        variants: globalVariantsRecipeObject,
-    });
+export const globalVariantRecipe = recipe({
+    variants: globalVariantsRecipeObject,
+});
